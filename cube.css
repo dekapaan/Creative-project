@@ -1,0 +1,83 @@
+.cube-container {
+  width: 300px;
+  height: 300px;
+  perspective: 600px;
+  position: absolute;
+  top: 100px;
+  right: 150px;
+}
+.cube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  position: relative;
+  transition: 1.2s ease;
+  /* animation class get added to this element */
+}
+
+.position1 {
+  transform: rotateY(-20deg) rotateX(-20deg);
+}
+
+.position2 {
+  transform: rotateY(110deg) rotateX(20deg);
+}
+
+.position3 {
+  transform: rotateY(20deg) rotateX(-70deg);
+}
+
+.position4 {
+  transform: rotateY(170deg) rotateX(20deg);
+}
+
+.position5 {
+  transform: rotateY(-120deg) rotateX(20deg);
+}
+
+.position6 {
+  transform: rotateY(0) rotateX(110deg);
+}
+
+.cube div {
+  backface-visibility: visible;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 2px solid #8f9577;
+  font-size: 50px;
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.front {
+  transform: rotateY(0) translateZ(151px);
+  background-image: url("/images/money.gif");
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(151px);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(151px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(151px);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(151px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(150px);
+}

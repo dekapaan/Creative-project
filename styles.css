@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ultra&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0 0 0/0.3), rgba(0 0 0/0.3)),
+    url("/image-from-rawpixel-id-2552326-jpeg.jpg");
+  background-size: cover;
+}
+
+h1 {
+  background: black;
+  background-size: 10%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "ultra", serif;
+  font-size: 150px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 10px 10px 0px white;
+  -webkit-text-stroke: 1px black;
+}
+
+p {
+  font-family: "Bodoni Moda", serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+  text-shadow: -4px -4px 1px black;
+  margin-left: 10px;
+}
+
+.text {
+  padding-left: 30px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
